@@ -80,7 +80,7 @@ main{
 form{
     margin: 40px 0;
 }
-form label{
+form label, form p {
     display: block;
     font-size: 20px;
     margin: 0 0 10;
@@ -91,5 +91,32 @@ form input{
     margin: 0 0 20px;
     padding-bottom: 10px 25px;
     width: 50%;
+    
+}
+.enviar{
+    width: 40%;
+    padding: 15px;
+    background-color: rgb(76, 76, 238);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.enviar:hover{
+    background-color: rgb(246, 4, 4);
+    transform: scale(7.0);
+     transform:rotate(360deg);
+     animation:repetir 1s linear infinite;
+} 
+@keyframes repetir {
+    0%{
+        transform: scale(1.0);
+        
+    }
+    100%{
+         transform: scale(7.0);
+    }
     
 }
